@@ -85,11 +85,13 @@ function problemFive(event) {
 // reference the elment "#to-the-back" and add an eventlistener for the mouseup event:
 // your code here:
 const btn5 = document.getElementById("to-the-back");
-
-btn5.addEventListener("click", function(){
-  let child = btn5.firstElementChild;
-  btn5.appendChild(child);
-})
+let children = btn5.children;
+for(let i = 0; i < children.length; i++){
+  children[i].addEventListener("click", function(){
+    let child = btn5.children[i];
+    btn5.appendChild(child);
+  })
+}
 /* ---------------------------------------- */
 
 
