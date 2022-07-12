@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    min-width: 25rem;
+}
+
+#inputContainer {
+    display: flex;
+    justify-content: center;
+    min-height: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#textBox {
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    width: 50rem;
+}
+
+#noteContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.noteBox {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding-right: 2.5rem;
+}
+
+.noteBox ul {
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #inputContainer {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    #textBox {
+        width: 100%;
+    }
+}
